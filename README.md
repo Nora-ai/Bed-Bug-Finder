@@ -40,7 +40,7 @@ API data snippet
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+https://wireframe.cc/p0kC8J
 
 ### MVP/PostMVP
 
