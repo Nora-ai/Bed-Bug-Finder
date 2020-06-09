@@ -4,7 +4,9 @@ insert link...
 
 ## Project Description
 
-insert project description...
+The Bed Bug Finder allows users to view reported beg bug homes in the neighborhood of their choice. A drop down option will permit a user to first select a borough and then a neighborhood, and return one randomized address where a report has been filed. The Bed Bug reporting API has defined "infested dwelling unit count" as *Number of units in the building that had bedbugs during the reporting period, as reported by the building owner*. Some reports do NOT have infested units. The user will be able to click a button to see **if** the unit has been infested or not. The user will also have the option to click 'Next' to return another randomized address and check if said unit has been infested.
+
+Added Bonus. Bed bugs need lovin' too. Match two units up by randomized search and you have a match! (not displayed in the wireframe)
 
 ## API and Data Sample
 
