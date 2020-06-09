@@ -75,7 +75,7 @@ https://wireframe.cc/p0kC8J
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+https://miro.com/app/board/o9J_krRRKb4=/
 
 ## Timeframes
 
