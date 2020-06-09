@@ -8,9 +8,7 @@ insert project description...
 
 ## API and Data Sample
 
-Bed Bug Reporting
-
-https://data.cityofnewyork.us/Housing-Development/Bedbug-Reporting/wz6d-d3jb 
+[Bed Bugs Reporting](https://data.cityofnewyork.us/Housing-Development/Bedbug-Reporting/wz6d-d3jb)
 
 API data snippet
 ```
@@ -41,7 +39,7 @@ API data snippet
 
 ## Wireframes
 
-https://wireframe.cc/p0kC8J
+[There are bed bugs in your wireframes](https://wireframe.cc/p0kC8J)
 
 ## MVP/PostMVP
 
@@ -75,7 +73,7 @@ https://wireframe.cc/p0kC8J
 
 ## Priority Matrix
 
-https://miro.com/app/board/o9J_krRRKb4=/
+[There are bed bugs in the Matrix](https://miro.com/app/board/o9J_krRRKb4=/)
 
 ## Timeframes
 
