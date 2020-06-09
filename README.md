@@ -13,7 +13,7 @@ Bed Bug Reporting
 https://data.cityofnewyork.us/Housing-Development/Bedbug-Reporting/wz6d-d3jb 
 
 API data snippet
-`
+```
 {
         "building_id": "3",
         "registration_id": "138953",
@@ -37,7 +37,7 @@ API data snippet
         "bbl": "1013670001",
         "nta": "Turtle Bay-East Midtown"
     },
-`
+```
 
 ## Wireframes
 
