@@ -1,10 +1,10 @@
 # Bed-Bug-Finder
 
-insert link.
+insert link...
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+insert project description...
 
 ## API and Data Sample
 
@@ -42,22 +42,22 @@ API data snippet
 
 https://wireframe.cc/p0kC8J
 
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
 - Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Choose a Property from a dropdown menu
+- Choose a second property from a dropdown menu
+- Select a submit button to return random object, displaying three properties
+- Click a button to display if an object property returns 0 or not, thus returning a yes or no on the page
+- Click a button to return the next random object, displaying three properties, while removing the previous object
+- Add event listeners to the buttons
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Add media queries for responsive design
+- Add a button to provide more information on the bed bug unit
+- Add a bed bug animation
 
 ## Project Schedule
 
