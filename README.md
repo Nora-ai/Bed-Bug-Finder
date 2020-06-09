@@ -13,7 +13,7 @@ Bed Bug Reporting
 https://data.cityofnewyork.us/Housing-Development/Bedbug-Reporting/wz6d-d3jb 
 
 API data snippet
-
+`
 {
         "building_id": "3",
         "registration_id": "138953",
@@ -37,11 +37,13 @@ API data snippet
         "bbl": "1013670001",
         "nta": "Turtle Bay-East Midtown"
     },
+`
 
 ## Wireframes
 
 https://wireframe.cc/p0kC8J
 
+## MVP/PostMVP
 
 #### MVP 
 
@@ -58,20 +60,17 @@ https://wireframe.cc/p0kC8J
 - Add media queries for responsive design
 - Add a button to provide more information on the bed bug unit
 - Add a bed bug animation
+- ADD A BED BUG MATCH-MAKING OPTION!!
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
-|June 8| Project Prompt | Incomplete
-|June 9| Wireframes / Priority Matrix / Timeframes | Incomplete
-|June 10| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|June 11| Initial Clickable Model  | Incomplete
-|June 12| MVP | Incomplete
+|June 8| Project Prompt | Complete
+|June 9| Basic HTML & CSS/Psuedocode functionality | Incomplete
+|June 10| Return API for dropdowns/randomized objects | Incomplete
+|June 11| Continue with API work/HTML & CSS  | Incomplete
+|June 12| Post MVP | Incomplete
 |June 15| Present | Incomplete
 
 ## Priority Matrix
