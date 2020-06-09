@@ -69,7 +69,7 @@ https://wireframe.cc/p0kC8J
 |June 8| Project Prompt | Complete
 |June 9| Basic HTML & CSS/Psuedocode functionality/Start API work | Incomplete
 |June 10| Return API for dropdowns/randomized objects | Incomplete
-|June 11| Continue with API work/HTML & CSS  | Incomplete
+|June 11| Continue with API work/Advanced CSS & Flexbox  | Incomplete
 |June 12| Post MVP | Incomplete
 |June 15| Present | Incomplete
 
@@ -82,10 +82,10 @@ Include a full list of features that have been prioritized based on the `Time an
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Psuedocode | H | 2hrs| hrs | hrs |
-| Basic HTML & CSS | 3H | 3hrs| hrs | hrs |
-| API functionality | 20H | 3hrs| hrs | hrs |
-| Advanced CSS | 10H | 3hrs| hrs | hrs |
-| PostMVP | H | 10hrs| hrs | hrs |
+| Basic HTML & CSS | H | 3hrs| hrs | hrs |
+| API functionality | H | 20hrs| hrs | hrs |
+| Advanced CSS | M | 10hrs| hrs | hrs |
+| PostMVP | L | 10hrs| hrs | hrs |
 | Total | H | 45hrs| hrs | hrs |
 
 ## Code Snippet
