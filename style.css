@@ -1,0 +1,65 @@
+.top {
+    text-align: center;
+}
+
+.dropdowns {
+    min-height: 100px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#choose-borough {
+    width: 200px;
+}
+
+#choose-neighborhood {
+    width: 200px;
+}
+
+#choose-borough,
+#choose-neighborhood,
+#find {
+    display: block;
+    margin: 20px auto;
+}
+
+#border-box {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-results {
+    min-height: 100px;
+}
+
+#placeholder {
+    display: block;
+    width: 250px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#append-bed-bugs {
+    height: 100px;
+}
+
+#yesOrNo,
+#next {
+    display: block;
+    margin: 10px auto;
+
+}
+
+.more-info {
+    max-height: 100px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 15px;
+}

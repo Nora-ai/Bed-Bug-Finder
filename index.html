@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bed Bug Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./app.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="top">
+        <h1>Bed Bug Finder</h1>
+        <h2>Reported...but <i>was it infested?</i></h2>
+        <p>more info more info more info more info more info more info more info</p>
+    </div>
+
+    <div class="dropdowns">
+        <p><b>Choose a Burough:</b></p>
+        <select name="borough" id="choose-borough"></select>
+        <p><b>Choose a neighbughood:</b></p>
+        <select name="neighborhood" id="choose-neighborhood"></select>
+        <button id="find">Find the Bugs!</button>
+    </div>
+
+<div id="border-box">
+    <div class="image-results">
+        <img id="placeholder" src="https://images.unsplash.com/photo-1517912181842-e5a9d4701a4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2044&q=80" alt="placeholder-image">
+    </div>
+
+    <div id="append-bed-bugs"></div>
+
+    <div>
+        <button id="yesOrNo">Was it infested?</button>
+        <button id="next">NEXT</button>
+    </div>
+</div>
+
+    
+
+    <div class="more-info">
+        <p>External links and information</p>
+        <p>more info more info more info more info more info more info more info</p>
+        
+        <a href="https://www.nysenate.gov/newsroom/in-the-news/jose-peralta/new-york-city-law-requires-landlords-tell-new-tenants-about-bedbug#:~:text=Dubbed%20the%20Bedbug%20Disclosure%20Act,unit%20during%20the%20previous%20year.&text=The%20bedbug%20epidemic%20has%20not%20been%20limited%20to%20residential%20buildings%20either.">BED BUG DISCLOSURE ACT</a>
+
+        <a href="https://www1.nyc.gov/assets/buildings/local_laws/ll69of2017.pdf">LOCAL LAW 69</a>
+
+    </div>
+
+    <footer>
+        <p>@Ellenora Tulchina 2020</p>
+    </footer>
+
+</body>
+</html>
