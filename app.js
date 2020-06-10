@@ -67,10 +67,11 @@ async function whichAddress(placeholder) {
         
         const neighborhoods = response.data
 
-        let filterHoods = neighborhoods.filter(function(hood) {
-            return hood.nta === placeholder
-        })
-        console.log(filterHoods)
+            let filterHoods = neighborhoods.filter(function(hood) {
+                return hood.nta === placeholder
+            })
+            console.log(filterHoods)
+
 
         let randomAddress = filterHoods[Math.floor(Math.random() * filterHoods.length)]
         console.log(randomAddress)
@@ -80,16 +81,10 @@ async function whichAddress(placeholder) {
         let addressProperties = document.querySelector('#append-bed-bugs')
         addressProperties.innerHMTL = ""
 
-        randomAddress.map((address) => {
-         addressProperties.innerHTML += `
-         <p>${address.house_number} ${address.street_name}</p>
-         <p>${address.postcode}</p>
+            addressProperties.innerHTML += `
+            <p>${randomAddress.house_number}${randomAddress.street_name}</p>
+            <p>${randomAddress.postcode}</p>
         `
-        })
-        
-        addressProperties.append(randomAddress)
-
-
 
     } catch(bug) {
         console.log(`Catch that ${bug}!`)
