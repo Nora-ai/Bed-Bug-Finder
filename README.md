@@ -81,7 +81,7 @@ API data snippet
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Psuedocode | H | 2hrs| .5hrs | hrs |
+| Psuedocode | H | 2hrs| 1.5hrs | hrs |
 | Basic HTML & CSS | H | 3hrs| 4.5hrs | hrs |
 | API functionality | H | 20hrs| 1hrs | hrs |
 | Advanced CSS | M | 10hrs| hrs | hrs |
