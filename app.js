@@ -152,8 +152,14 @@ const bugChaos = () => {
     bug.append(yes)
     console.log(yes)
     console.log(bug)
+    for (let i = 0; i < 20; i++) {
+        createAndReleaseTheBugs()
+    }
+    // setTimeout(function(){
+    // (createAndReleaseTheBugs(bugs));}, 1000)
 }
 //console.log(bugChaos)
+
 
 //created an array of responses for the nope function to cycle through
 //sort of works, but not..
@@ -246,6 +252,7 @@ refreshWasItInfested()
 const body = document.body;
 //not sure why i am defining body, this already exists in html.. but it was in the duck hunt
 
+//the flying bug at the onload of page
 const showMeTheBug = () => {
     const bugs = document.createElement('div')
     //bugs.setAttribute('id', 'getBuggyWithIt')
@@ -263,8 +270,37 @@ const showMeTheBug = () => {
 
 showMeTheBug()
 
-    //add for loop
     //make sure the bugs disapper after a few seconds.
+    //add the for loop here
+
+
+const createAndReleaseTheBugs = () => {
+    //do a for loop of showMethebug
+    //call the function in the bug chaos function
+    
+    const bugs = document.createElement('div')
+    //bugs.setAttribute('id', 'getBuggyWithIt')
+    bugs.className = 'bugs'
+    body.append(bugs)
+        
+    const moveBugs = function (bugs) {
+        bugs.style.left = Math.random() * window.innerWidth + "px"
+        bugs.style.top = Math.random() * window.innerHeight + "px"
+      }
+    setInterval(function(){ 
+        (moveBugs(bugs)); }, 1000);
+    
+    
+    }
+    
+    // for (let i = 0; i < 20; i++) {
+    //     createAndReleaseTheBugs()
+    // }
+
+
+
+
+
 
 
 
@@ -272,3 +308,4 @@ showMeTheBug()
 //psuedocode to do list
 //IF I HAVE TIME
     //generate a random image that will circulate and refresh every time the find the bugs button is clicked. this might be extra and post MVP
+    //remove undefined from dropdown
