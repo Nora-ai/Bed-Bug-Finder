@@ -68,12 +68,12 @@ footer {
 
 .bugs {
     position: absolute;
-    background-image: url("https://www.pngkit.com/view/u2q8i1y3r5o0r5i1_bed-bug-png-picture-bed-bugs-images-png/");
+    background-image: url("https://pngimg.com/uploads/bed_bug/bed_bug_PNG29.png");
     background-position: -100px -160px;
     width: 110px;
     height: 115px;
     transition: top 2s, left 2s;
     transition-timing-function: linear;
     background-repeat: no-repeat;
-    z-index: 10;
+    z-index: 100;
 }

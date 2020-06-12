@@ -6,9 +6,6 @@ const pullData = async () => {
 try {
     const response = await axios.get(`${url}`)
 
-    // const boroughList = Object.keys(response.data)
-    // console.log(response.data)
-
     const chooseNeighborhood = document.querySelector('#choose-neighborhood')
 
     //created a new object with unique properties
@@ -16,11 +13,8 @@ try {
     let neighborhoods = new Set(response.data.map(hood => {
         return hood.nta
     }))
-        console.log(neighborhoods)
+        //console.log(neighborhoods)
 
-    //created a set iterator
-    //const hoodList = neighborhoods.values()
-    //console.log(hoodList)
 
     //loops through the new object to access the values to add to the neighborhood dropdown
     neighborhoods.forEach((hood) => {
@@ -47,7 +41,7 @@ function getAddress (e) {
     e.preventDefault()
     const chooseHood = document.querySelector('#choose-neighborhood')
     const getValue = chooseHood.value
-    console.log(getValue)
+    //console.log(getValue)
     whichAddress(getValue)
     refreshAddress()
 }
@@ -80,7 +74,7 @@ async function whichAddress(placeholder) {
             filterHoods = neighborhoods.filter(function(hood) {
                 return hood.nta === placeholder
             })
-            console.log(filterHoods)
+            //console.log(filterHoods)
 
         //let (removed to make this a global variable)
         randomAddress = filterHoods[Math.floor(Math.random() * filterHoods.length)]
@@ -148,18 +142,26 @@ next.addEventListener('click', clickNext)
 const bug = document.querySelector('#findOut')
 
 
-// const bugChaos = () => {
-//     //testing before making the bugs
-//     const yes = document.createElement('p')
-//     yes.setAttribute('id', "yesYesYes")
-//     //const yeahh = document.createTextNode('YES')
-//     bug.removeChild(bug.lastChild)
-//     yes.innerHTML = 'YES'
-//     bug.append(yes)
-//     console.log(yes)
-//     console.log(bug)
-//}
+const bugChaos = () => {
+    //testing before making the bugs
+    const yes = document.createElement('p')
+    yes.setAttribute('id', "yesYesYes")
+    //const yeahh = document.createTextNode('YES')
+    bug.removeChild(bug.lastChild)
+    yes.innerHTML = 'YES'
+    bug.append(yes)
+    console.log(yes)
+    console.log(bug)
+}
 //console.log(bugChaos)
+
+//created an array of responses for the nope function to cycle through
+//sort of works, but not..
+let theNopes = ['nope', 'nahhh', 'negative', 'no bugs here', 'try the next building']
+let randomNope = []
+randomNope = theNopes[Math.floor(Math.random() * theNopes.length)]
+        console.log(randomNope)
+
 
 const nope = () => {
     //testing 
@@ -167,12 +169,14 @@ const nope = () => {
     no.setAttribute("id", "noNoNo")
     //const nahh = document.createTextNode('NOPE')
     bug.removeChild(bug.lastChild)
-    no.innerHTML = 'NOPE'
+    no.innerHTML = randomNope
+    //no.innerHTML = 'NOPE'
     bug.append(no)
     console.log(no)
     console.log(bug)
 }
 //console.log(nope)
+
 
 function refreshWasItInfested() {
     console.log('hello')
@@ -218,7 +222,7 @@ function refreshWasItInfested() {
     if (oldAnswerNo === null) {
         return;
     } else {
-        console.log(oldAnswerNo)
+        //console.log(oldAnswerNo)
         (oldAnswerNo.removeChild(oldAnswerNo.lastChild))
     }
     if (oldAnswerYes === null) {
@@ -232,10 +236,6 @@ function refreshWasItInfested() {
 refreshWasItInfested()
 
 
-//can I make the nopes and yesses just disappear for a few seconds.
-
-
-
 
 
 //creating bug function here, so not to confuse with what I need to fix above
@@ -246,7 +246,7 @@ refreshWasItInfested()
 const body = document.body;
 //not sure why i am defining body, this already exists in html.. but it was in the duck hunt
 
-const bugChaos = () => {
+const showMeTheBug = () => {
     const bugs = document.createElement('div')
     //bugs.setAttribute('id', 'getBuggyWithIt')
     bugs.className = 'bugs'
@@ -261,12 +261,10 @@ const bugChaos = () => {
         
     }
 
-bugChaos()
+showMeTheBug()
 
     //add for loop
     //make sure the bugs disapper after a few seconds.
-
-
 
 
 

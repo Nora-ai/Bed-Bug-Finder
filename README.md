@@ -67,8 +67,8 @@ API data snippet
 |  Day | Deliverable | Status
 |---|---| ---|
 |June 8| Project Prompt | Complete
-|June 9| Basic HTML & CSS/Psuedocode functionality/Start API work | Incomplete
-|June 10| Return API for dropdowns/randomized objects | Incomplete
+|June 9| Basic HTML & CSS/Psuedocode functionality/Start API work | Complete
+|June 10| Return API for dropdowns/randomized objects | Complete
 |June 11| Continue with API work/Advanced CSS & Flexbox  | Incomplete
 |June 12| Post MVP | Incomplete
 |June 15| Present | Incomplete
@@ -83,7 +83,7 @@ API data snippet
 | --- | :---: |  :---: | :---: | :---: |
 | Psuedocode | H | 2hrs| 1.5hrs | hrs |
 | Basic HTML & CSS | H | 3hrs| 4.5hrs | hrs |
-| API functionality | H | 20hrs| 1hrs | hrs |
+| API functionality | H | 20hrs| 16hrs | hrs |
 | Advanced CSS | M | 10hrs| hrs | hrs |
 | PostMVP | L | 10hrs| hrs | hrs |
 | Total | H | 45hrs| hrs | hrs |
