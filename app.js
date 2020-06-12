@@ -123,8 +123,24 @@ addressProperties.innerHTML = `
 <p> Address: ${randomAddress.house_number} ${randomAddress.street_name}</p>
 <p> Zip Code: ${randomAddress.postcode}</p>
 `
-toBugOrNotToBug()
-   
+//toBugOrNotToBug()
+
+if (document.querySelector('#noNoNo')) {
+    const removeNo = document.querySelector('#noNoNo')
+    removeNo.innerHTML = ''
+}
+
+if (document.querySelector('#yesYesYes')) {
+const removeYes = document.querySelector('#yesYesYes')
+removeYes.innerHTML = ''
+}
+
+if (document.querySelectorAll('.bugs')) {
+    const removeBugs = document.querySelectorAll('.bugs')
+for (let i = 0; i < removeBugs.length; i++) {
+    removeBugs[i].remove()
+}
+}
 }
 
 let next = document.querySelector('#next')
@@ -170,7 +186,9 @@ randomNope = theNopes[Math.floor(Math.random() * theNopes.length)]
 
 
 const nope = () => {
-    //testing 
+    let theNopes = ['nope', 'nahhh', 'negative', 'no bugs here', 'try the next building']
+    let randomNope = []
+    randomNope = theNopes[Math.floor(Math.random() * theNopes.length)]
     const no = document.createElement('p')
     no.setAttribute("id", "noNoNo")
     //const nahh = document.createTextNode('NOPE')
@@ -180,6 +198,7 @@ const nope = () => {
     bug.append(no)
     console.log(no)
     console.log(bug)
+    
 }
 //console.log(nope)
 
@@ -237,8 +256,6 @@ function refreshWasItInfested() {
         (oldAnswerYes.removeChild(oldAnswerYes.lastChild))
     }
     }
-    
-
 refreshWasItInfested()
 
 
@@ -265,13 +282,13 @@ const showMeTheBug = () => {
       }
         setInterval(function(){ 
             (moveBugs(bugs)); }, 1000);
-        
     }
 
 showMeTheBug()
 
     //make sure the bugs disapper after a few seconds.
     //add the for loop here
+
 
 
 const createAndReleaseTheBugs = () => {

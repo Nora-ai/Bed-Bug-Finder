@@ -54,11 +54,18 @@
 
 }
 
+#yesYesYes {
+    text-align: center;
+    color: red;
+    font-size: 50px;
+}
+
 #noNoNo {
     text-align: center;
     color: red;
     font-size: 50px;
 }
+
 
 .more-info {
     max-height: 100px;
@@ -76,7 +83,7 @@ footer {
     position: absolute;
     background-image: url("https://pngimg.com/uploads/bed_bug/bed_bug_PNG29.png");
     background-position: -100px -160px;
-    /* background-size: contain; */
+    background-size: cover;
     width: 20px;
     height: 20px;
     transition: top 2s, left 2s;
