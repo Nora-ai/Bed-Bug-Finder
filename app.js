@@ -8,12 +8,10 @@ try {
 
     const chooseNeighborhood = document.querySelector('#choose-neighborhood')
 
-    //created a new object with unique properties
-    //returns a new array
+    //created a new object with unique properties that returns a new array
     let neighborhoods = new Set(response.data.map(hood => {
         return hood.nta
     }))
-        //console.log(neighborhoods)
 
 
     //loops through the new object to access the values to add to the neighborhood dropdown
@@ -32,7 +30,7 @@ try {
 
 pullData()
 
-//psuedocode
+
 //dropdown list will show a list of neighborhoods
 //add an event listener to button 'find the bugs'
 
@@ -50,13 +48,12 @@ const findBugs = document.getElementById('find')
 findBugs.addEventListener('click', getAddress)
 
 
-
-
 //create a function that returns 3 properties (#, street, zip) of ONE object. use math.random
 //calling API again
 //get zip code OF ONE ADDRESS and append it to the #append-bed-bugs div
 
-//declaring randomAddress as a global varible
+
+//global variables
 let randomAddress 
 let addressproperties
 let filterHoods 
@@ -108,39 +105,102 @@ function refreshAddress() {
 }
 
 
+
+
+//making a new array of strings with the background images that will circulate when NEXT/FIND THE BUGS is clicked
+
+//let backgroundImages = 
+// [
+// "https://res.cloudinary.com/alienora/image/upload/v1591996433/mattress_patterns-12_iife0r.jpg",
+// "https://res.cloudinary.com/alienora/image/upload/v1591996433/mattress_patterns-11_hn2iza.jpg",
+// "https://res.cloudinary.com/alienora/image/upload/v1591996433/mattress_patterns-09_udrtkl.jpg",
+// "https://res.cloudinary.com/alienora/image/upload/v1591996433/mattress_patterns-07_swm2qy.jpg",
+// "https://res.cloudinary.com/alienora/image/upload/v1591996433/mattress_patterns-08_fd9fej.jpg",
+// "https://res.cloudinary.com/alienora/image/upload/v1591996431/mattress_patterns-04_avcspn.jpg",
+// "https://res.cloudinary.com/alienora/image/upload/v1591996431/mattress_patterns-06_jxorac.jpg",
+// "https://res.cloudinary.com/alienora/image/upload/v1591996431/mattress_patterns-03_k1qhtu.jpg",
+// "https://res.cloudinary.com/alienora/image/upload/v1591996431/mattress_patterns-01_crpwy4.jpg",
+// "https://res.cloudinary.com/alienora/image/upload/v1591996431/mattress_patterns-02_wttrwp.jpg"
+// ]
+
+//let randomBGImage = []
+//randomBGImage = backgroundIamges[Math.floor(Math.random() * backgroundImages.length)]
+        //console.log(randomBGImage)
+
+
+
+
+
+//making a new array of strings with home adddresse that will circulate with NEXT/FINDT THE BUGS is clicked
+
+let newYorkApts = 
+[
+"https://res.cloudinary.com/alienora/image/upload/v1592062092/daryan-shamkhali-yuhjpNvG9u0-unsplash_hjmphn.jpg",
+"https://res.cloudinary.com/alienora/image/upload/v1592062094/daryan-shamkhali-tRDGs9utMUo-unsplash_npomis.jpg",
+"https://res.cloudinary.com/alienora/image/upload/v1592062096/rachel-martin-4yCXNMLP9g8-unsplash_sh3crp.jpg",
+"https://res.cloudinary.com/alienora/image/upload/v1592062095/niklas-herrmann-yEzW39D3ajw-unsplash_gkdwzt.jpg"
+]
+
+
+
+
+
 //make a function for the NEXT button
 //add event listener
 //once clicked, the append-bed-bugs returns a new random address within the same filter and also refreshes the page
 
 let clickNext = () => {
 
-//generate a math.random method
-//range of array is filterhoods.length
-randomAddress = filterHoods[Math.floor(Math.random() * filterHoods.length)]
-console.log(randomAddress)
+    //generate a math.random method
+    //range of array is filterhoods.length
+    randomAddress = filterHoods[Math.floor(Math.random() * filterHoods.length)]
+        console.log(randomAddress)
 
-addressProperties.innerHTML = `
-<p> Address: ${randomAddress.house_number} ${randomAddress.street_name}</p>
-<p> Zip Code: ${randomAddress.postcode}</p>
-`
-//toBugOrNotToBug()
+    addressProperties.innerHTML = `
+        <p> Address: ${randomAddress.house_number} ${randomAddress.street_name}</p>
+        <p> Zip Code: ${randomAddress.postcode}</p>
+        `
 
-if (document.querySelector('#noNoNo')) {
-    const removeNo = document.querySelector('#noNoNo')
-    removeNo.innerHTML = ''
-}
+    if (document.querySelector('#noNoNo')) {
+        const removeNo = document.querySelector('#noNoNo')
+        removeNo.innerHTML = ''
+        }
 
-if (document.querySelector('#yesYesYes')) {
-const removeYes = document.querySelector('#yesYesYes')
-removeYes.innerHTML = ''
-}
+    if (document.querySelector('#yesYesYes')) {
+        const removeYes = document.querySelector('#yesYesYes')
+        removeYes.innerHTML = ''
+        }
 
-if (document.querySelectorAll('.bugs')) {
-    const removeBugs = document.querySelectorAll('.bugs')
-for (let i = 0; i < removeBugs.length; i++) {
-    removeBugs[i].remove()
-}
-}
+    if (document.querySelectorAll('.bugs')) {
+        const removeBugs = document.querySelectorAll('.bugs')
+        for (let i = 0; i < removeBugs.length; i++) {
+        removeBugs[i].remove()
+        }
+    }
+    
+
+    let backgroundImages = 
+    [
+        "https://res.cloudinary.com/alienora/image/upload/v1591996433/mattress_patterns-12_iife0r.jpg",
+        "https://res.cloudinary.com/alienora/image/upload/v1591996433/mattress_patterns-11_hn2iza.jpg",
+        "https://res.cloudinary.com/alienora/image/upload/v1591996433/mattress_patterns-09_udrtkl.jpg",
+        "https://res.cloudinary.com/alienora/image/upload/v1591996433/mattress_patterns-07_swm2qy.jpg",
+        "https://res.cloudinary.com/alienora/image/upload/v1591996433/mattress_patterns-08_fd9fej.jpg",
+        "https://res.cloudinary.com/alienora/image/upload/v1591996431/mattress_patterns-04_avcspn.jpg",
+        "https://res.cloudinary.com/alienora/image/upload/v1591996431/mattress_patterns-06_jxorac.jpg",
+        "https://res.cloudinary.com/alienora/image/upload/v1591996431/mattress_patterns-03_k1qhtu.jpg",
+        "https://res.cloudinary.com/alienora/image/upload/v1591996431/mattress_patterns-01_crpwy4.jpg",
+        "https://res.cloudinary.com/alienora/image/upload/v1591996431/mattress_patterns-02_wttrwp.jpg"
+    ]
+
+
+    const changeBackgroundImage = () => {
+        let randomBGImage = backgroundImages[Math.floor(Math.random() * backgroundImages.length)]
+        document.body.style.backgroundImage = `url(${randomBGImage})`
+        return randomBGImage
+    }
+    changeBackgroundImage()
+    
 }
 
 let next = document.querySelector('#next')
@@ -159,10 +219,8 @@ const bug = document.querySelector('#findOut')
 
 
 const bugChaos = () => {
-    //testing before making the bugs
     const yes = document.createElement('p')
     yes.setAttribute('id', "yesYesYes")
-    //const yeahh = document.createTextNode('YES')
     bug.removeChild(bug.lastChild)
     yes.innerHTML = 'YES'
     bug.append(yes)
@@ -171,18 +229,9 @@ const bugChaos = () => {
     for (let i = 0; i < 20; i++) {
         createAndReleaseTheBugs()
     }
-    // setTimeout(function(){
-    // (createAndReleaseTheBugs(bugs));}, 1000)
 }
-//console.log(bugChaos)
 
 
-//created an array of responses for the nope function to cycle through
-//sort of works, but not..
-let theNopes = ['nope', 'nahhh', 'negative', 'no bugs here', 'try the next building']
-let randomNope = []
-randomNope = theNopes[Math.floor(Math.random() * theNopes.length)]
-        console.log(randomNope)
 
 
 const nope = () => {
@@ -191,16 +240,13 @@ const nope = () => {
     randomNope = theNopes[Math.floor(Math.random() * theNopes.length)]
     const no = document.createElement('p')
     no.setAttribute("id", "noNoNo")
-    //const nahh = document.createTextNode('NOPE')
     bug.removeChild(bug.lastChild)
     no.innerHTML = randomNope
-    //no.innerHTML = 'NOPE'
     bug.append(no)
     console.log(no)
     console.log(bug)
     
 }
-//console.log(nope)
 
 
 function refreshWasItInfested() {
@@ -229,7 +275,6 @@ const toBugOrNotToBug = () => {
     } else {
         return nope();
     }
-    
 }
 
 const wasItInfested = document.getElementById('yesOrNo')
@@ -261,11 +306,6 @@ refreshWasItInfested()
 
 
 
-//creating bug function here, so not to confuse with what I need to fix above
-//const moveBugs will eventually be bugChaos
-
-    //button.onClick?
-
 const body = document.body;
 //not sure why i am defining body, this already exists in html.. but it was in the duck hunt
 
@@ -286,8 +326,7 @@ const showMeTheBug = () => {
 
 showMeTheBug()
 
-    //make sure the bugs disapper after a few seconds.
-    //add the for loop here
+
 
 
 
@@ -296,7 +335,6 @@ const createAndReleaseTheBugs = () => {
     //call the function in the bug chaos function
     
     const bugs = document.createElement('div')
-    //bugs.setAttribute('id', 'getBuggyWithIt')
     bugs.className = 'bugs'
     body.append(bugs)
         
@@ -310,15 +348,7 @@ const createAndReleaseTheBugs = () => {
     
     }
     
-    // for (let i = 0; i < 20; i++) {
-    //     createAndReleaseTheBugs()
-    // }
-
-
-
-
-
-
+    
 
 
 

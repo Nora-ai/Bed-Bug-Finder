@@ -1,9 +1,13 @@
+body {
+    background-image: url("https://res.cloudinary.com/alienora/image/upload/v1591996432/mattress_patterns-10_lhktj6.jpg");
+}
+
 .top {
     text-align: center;
 }
 
 .dropdowns {
-    min-height: 100px;
+    /* min-height: 100px; */
     text-align: center;
     margin-top: 50px;
 }
@@ -24,7 +28,6 @@
 }
 
 #border-box {
-    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -42,7 +45,7 @@
 }
 
 #append-bed-bugs {
-    height: 100px;
+    /* height: 100px; */
     text-align: center;
     font-weight: bold;
 }
@@ -71,6 +74,9 @@
     max-height: 100px;
     text-align: center;
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
 }
 
 footer {
@@ -82,14 +88,15 @@ footer {
 .bugs {
     position: absolute;
     background-image: url("https://pngimg.com/uploads/bed_bug/bed_bug_PNG29.png");
+    /* background-image: url("https://res.cloudinary.com/alienora/image/upload/v1591995801/bedbug-new_ssn4tl.png"); */
     background-position: -100px -160px;
-    background-size: cover;
+    /* background-size: cover; */
     width: 20px;
     height: 20px;
     transition: top 2s, left 2s;
     transition-timing-function: linear;
     background-repeat: no-repeat;
-    z-index: 10;
+    z-index: 100;
 }
 
 .bugInfestation {
