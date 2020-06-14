@@ -177,8 +177,7 @@ let clickNext = () => {
 
     const changeHomeImage = () => {
         let randomHome = newYorkApts[Math.floor(Math.random() * newYorkApts.length)]
-        let mainImage = document.querySelector('#placeholder')
-        mainImage.style.backgroundImage = `url(${randomHome})`
+        document.querySelector('#placeholder').src = `${randomHome}`
         return randomHome
     }
     changeHomeImage()

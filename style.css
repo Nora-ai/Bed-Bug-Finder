@@ -1,5 +1,6 @@
 body {
     background-image: url("https://res.cloudinary.com/alienora/image/upload/v1591996432/mattress_patterns-10_lhktj6.jpg");
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .top {
@@ -42,6 +43,7 @@ body {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 30px;
 }
 
 #append-bed-bugs {
