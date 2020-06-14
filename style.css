@@ -5,32 +5,62 @@ body {
 
 .top {
     text-align: center;
+    color: #464646;
 }
 
 .dropdowns {
-    /* min-height: 100px; */
-    text-align: center;
     margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 80px;
+    padding-left: 80px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    background-color: #CCCCCC;
+    opacity: 0.6;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; */
 }
 
 #choose-borough {
     width: 200px;
+    background-color: transparent;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 #choose-neighborhood {
     width: 200px;
+    background-color: transparent;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; */
+}
+
+#find {
+    margin-top: 10px;
 }
 
 #choose-borough,
 #choose-neighborhood,
 #find {
     display: block;
-    margin: 20px auto;
+    background-color: transparent;
+    border-color: #464646;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #border-box {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #CCCCCC;
+    opacity: 0.6;
 }
 
 .image-results {
@@ -39,15 +69,14 @@ body {
 
 #placeholder {
     display: block;
-    width: 250px;
-    margin-top: 50px;
+    width: 300px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 #append-bed-bugs {
-    /* height: 100px; */
     text-align: center;
     font-weight: bold;
 }
@@ -56,6 +85,10 @@ body {
 #next {
     display: block;
     margin: 10px auto;
+    background-color: transparent;
+    border-color: #464646;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
 
 }
 
@@ -67,7 +100,7 @@ body {
 
 #noNoNo {
     text-align: center;
-    color: red;
+    color: maroon;
     font-size: 50px;
 }
 
@@ -75,26 +108,22 @@ body {
 .more-info {
     max-height: 100px;
     text-align: center;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
+    margin-top: 50px;
+    color: #464646;
 }
+
 
 footer {
     margin-top: 50px;
     text-align: center;
     font-size: 15px;
+    color: #464646;
 }
 
 .bugs {
     position: absolute;
-    /* background-image: url("https://pngimg.com/uploads/bed_bug/bed_bug_PNG29.png"); */
     background-image: url("https://res.cloudinary.com/alienora/image/upload/v1592094635/rsz_bedbug-new_sfyy2b.png");
     background-position: center;
-    /* background-position: -160px -160px;  */
-    /* background-attachment: fixed; */
-    /* background-size: 10px; */
     width: 50px;
     height: 50px;
     transition: top 2s, left 2s;
