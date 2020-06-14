@@ -107,42 +107,6 @@ function refreshAddress() {
 
 
 
-//making a new array of strings with the background images that will circulate when NEXT/FIND THE BUGS is clicked
-
-//let backgroundImages = 
-// [
-// "https://res.cloudinary.com/alienora/image/upload/v1591996433/mattress_patterns-12_iife0r.jpg",
-// "https://res.cloudinary.com/alienora/image/upload/v1591996433/mattress_patterns-11_hn2iza.jpg",
-// "https://res.cloudinary.com/alienora/image/upload/v1591996433/mattress_patterns-09_udrtkl.jpg",
-// "https://res.cloudinary.com/alienora/image/upload/v1591996433/mattress_patterns-07_swm2qy.jpg",
-// "https://res.cloudinary.com/alienora/image/upload/v1591996433/mattress_patterns-08_fd9fej.jpg",
-// "https://res.cloudinary.com/alienora/image/upload/v1591996431/mattress_patterns-04_avcspn.jpg",
-// "https://res.cloudinary.com/alienora/image/upload/v1591996431/mattress_patterns-06_jxorac.jpg",
-// "https://res.cloudinary.com/alienora/image/upload/v1591996431/mattress_patterns-03_k1qhtu.jpg",
-// "https://res.cloudinary.com/alienora/image/upload/v1591996431/mattress_patterns-01_crpwy4.jpg",
-// "https://res.cloudinary.com/alienora/image/upload/v1591996431/mattress_patterns-02_wttrwp.jpg"
-// ]
-
-//let randomBGImage = []
-//randomBGImage = backgroundIamges[Math.floor(Math.random() * backgroundImages.length)]
-        //console.log(randomBGImage)
-
-
-
-
-
-//making a new array of strings with home adddresse that will circulate with NEXT/FINDT THE BUGS is clicked
-
-let newYorkApts = 
-[
-"https://res.cloudinary.com/alienora/image/upload/v1592062092/daryan-shamkhali-yuhjpNvG9u0-unsplash_hjmphn.jpg",
-"https://res.cloudinary.com/alienora/image/upload/v1592062094/daryan-shamkhali-tRDGs9utMUo-unsplash_npomis.jpg",
-"https://res.cloudinary.com/alienora/image/upload/v1592062096/rachel-martin-4yCXNMLP9g8-unsplash_sh3crp.jpg",
-"https://res.cloudinary.com/alienora/image/upload/v1592062095/niklas-herrmann-yEzW39D3ajw-unsplash_gkdwzt.jpg"
-]
-
-
-
 
 
 //make a function for the NEXT button
@@ -201,6 +165,24 @@ let clickNext = () => {
     }
     changeBackgroundImage()
     
+
+
+    let newYorkApts = 
+    [
+        "https://res.cloudinary.com/alienora/image/upload/v1592062092/daryan-shamkhali-yuhjpNvG9u0-unsplash_hjmphn.jpg",
+        "https://res.cloudinary.com/alienora/image/upload/v1592062094/daryan-shamkhali-tRDGs9utMUo-unsplash_npomis.jpg",
+        "https://res.cloudinary.com/alienora/image/upload/v1592062096/rachel-martin-4yCXNMLP9g8-unsplash_sh3crp.jpg",
+        "https://res.cloudinary.com/alienora/image/upload/v1592062095/niklas-herrmann-yEzW39D3ajw-unsplash_gkdwzt.jpg"
+    ]
+
+    const changeHomeImage = () => {
+        let randomHome = newYorkApts[Math.floor(Math.random() * newYorkApts.length)]
+        let mainImage = document.querySelector('#placeholder')
+        mainImage.style.backgroundImage = `url(${randomHome})`
+        return randomHome
+    }
+    changeHomeImage()
+
 }
 
 let next = document.querySelector('#next')
@@ -226,7 +208,7 @@ const bugChaos = () => {
     bug.append(yes)
     console.log(yes)
     console.log(bug)
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 40; i++) {
         createAndReleaseTheBugs()
     }
 }
