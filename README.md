@@ -4,9 +4,8 @@ insert link...
 
 ## Project Description
 
-The Bed Bug Finder allows users to view reported beg bug homes in the neighborhood of their choice. A drop down option will permit a user to first select a borough and then a neighborhood, and return one randomized address where a report has been filed. The Bed Bug reporting API has defined "infested dwelling unit count" as *Number of units in the building that had bedbugs during the reporting period, as reported by the building owner*. Some reports do NOT have infested units. The user will be able to click a button to see **if** the unit has been infested or not. The user will also have the option to click 'Next' to return another randomized address and check if said unit has been infested.
+The Bed Bug Finder allows users to view reported beg bug homes various NYC neighborhoods. A drop down option will permit a user to first select a borough and then a neighborhood, and return one randomized address where a report has been filed. The Bed Bug reporting API has defined "infested dwelling unit count" as *Number of units in the building that had bedbugs during the reporting period, as reported by the building owner*. Some reports do NOT have infested units. The user will be able to click a button to see **if** the unit has been infested or not. The user will also have the option to click 'Next' to return another randomized address and check if said unit has been infested.
 
-Added Bonus. Bed bugs need lovin' too. Match two units up by randomized search and you have a match! (not displayed in the wireframe)
 
 ## API and Data Sample
 
@@ -47,19 +46,19 @@ API data snippet
 
 #### MVP 
 
-- Find and use external api 
-- Choose a Property from a dropdown menu
-- Choose a second property from a dropdown menu
-- Select a submit button to return random object, displaying three properties
-- Click a button to display if an object property returns 0 or not, thus returning a yes or no on the page
-- Click a button to return the next random object, displaying three properties, while removing the previous object
-- Add event listeners to the buttons
+- Find and use an external API.
+- Choose a property from a dropdown menu.
+- Choose a property from a second dropdown menu.
+- Select a submit button to return a random object, displaying three properties.
+- Click a button to display if an object property returns 0 or not, thus returning a yes or no on the page.
+- Click a button to return the next random object, displaying three properties, while removing the previous object.
+- Add event listeners to the buttons.
 
 #### PostMVP  
 
-- Add media queries for responsive design
-- Add a button to provide more information on the bed bug unit
-- Add a bed bug animation
+- Add a bed bug animation.
+- Add media queries for responsive design.
+- Add a button to provide more information on the bed bug unit.
 - ADD A BED BUG MATCH-MAKING OPTION!!
 
 ## Project Schedule
@@ -90,11 +89,9 @@ API data snippet
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+The four functions below are all connected to one button, the NEXT button. Once clicked, based on the API, the button will return the 'nope' function or the 'bugChaos' function. The 'nope' function will return a random version of the word 'no'. The 'bugChaos' function will return an animation. Every time the button is clicked, the page is refreshed.
 
 ```
-//The four below functions are all connected to one button. Once clicked, based on the API, the button will return the 'nope' function or the 'bugChaos' function. The 'nope' function will return a random version of the word 'no'. The 'bugChaos' function will return an animation. Every time the button is clicked, it also refreshes the page.
-
 const bug = document.querySelector('#findOut')
 
 const bugChaos = () => {
@@ -154,6 +151,6 @@ refreshWasItInfested()
 ## Change Log
 -  MVP completed in its entirety.
 -  Post MVP Bug animations completed.
--  Post presentation, I will add media queries for responsive design.
--  My original idea was to do a match-matching site for bed bugs (to be funny..) I had this listed in my Post MVP. I now don't think that bed bugs should populate, so I will *scratch* that idea.
+-  Post presentation, I will add media queries for responsive design
+-  My original idea was to do a match-matching website for bed bugs (to be funny..). I had this listed in my Post MVP. I now don't think that bed bugs should populate, so I will *scratch* that idea.
 -  I would like to explore getting further access to the API.
