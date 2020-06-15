@@ -49,8 +49,9 @@ findBugs.addEventListener('click', getAddress)
 
 //global variables
 let randomAddress 
-let addressproperties
 let filterHoods 
+let addressProperties 
+
 
 async function whichAddress(placeholder) {
     try {
@@ -67,17 +68,17 @@ async function whichAddress(placeholder) {
         
         addressProperties = document.querySelector('#append-bed-bugs')
         addressProperties.innerHMTL = ""
+        addressProperties.style.color = 'blue'
 
             addressProperties.innerHTML = `
-            <p> Address: ${randomAddress.house_number} ${randomAddress.street_name}</p>
-            <p> Zip Code: ${randomAddress.postcode}</p>
+            <p>ADDRESS: ${randomAddress.house_number} ${randomAddress.street_name}</p>
+            <p>ZIP CODE: ${randomAddress.postcode}</p>
         `
 
     } catch(bug) {
         console.log(`Catch that ${bug}!`)
     }
 }
-whichAddress()
 
 
 

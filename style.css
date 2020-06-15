@@ -129,11 +129,20 @@ body {
     color: #464646;
 }
 
+#disclosure,
+#local-law {
+    text-decoration: none;
+    color: #464646;
+}
+
 footer {
     margin-top: 50px;
     text-align: center;
     font-size: 15px;
     color: #464646;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
 }
 
 .bugs {
