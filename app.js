@@ -68,8 +68,6 @@ async function whichAddress(placeholder) {
         
         addressProperties = document.querySelector('#append-bed-bugs')
         addressProperties.innerHMTL = ""
-        addressProperties.style.color = 'blue'
-        
 
             addressProperties.innerHTML = `
             <p>ADDRESS: ${randomAddress.house_number} ${randomAddress.street_name}</p>
@@ -189,7 +187,6 @@ const bugChaos = () => {
     yes.innerHTML = 'YES'
     bug.append(yes)
     console.log(yes)
-    //console.log(bug)
     for (let i = 0; i < 40; i++) {
         createAndReleaseTheBugs()
     }
@@ -207,8 +204,6 @@ const nope = () => {
     no.innerHTML = randomNope
     bug.append(no)
     console.log(no)
-    //console.log(bug)
-    
 }
 
 
@@ -282,10 +277,3 @@ const createAndReleaseTheBugs = () => {
     }
     
     
-
-
-//psuedocode to do list
-//IF I HAVE TIME
-    //remove undefined from dropdown
-    //connect find the bugs button with the changing images and background
-    //refresh address at page onload
