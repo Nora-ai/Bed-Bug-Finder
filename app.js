@@ -69,6 +69,7 @@ async function whichAddress(placeholder) {
         addressProperties = document.querySelector('#append-bed-bugs')
         addressProperties.innerHMTL = ""
         addressProperties.style.color = 'blue'
+        
 
             addressProperties.innerHTML = `
             <p>ADDRESS: ${randomAddress.house_number} ${randomAddress.street_name}</p>
@@ -100,8 +101,8 @@ let clickNext = () => {
         console.log(randomAddress)
 
     addressProperties.innerHTML = `
-        <p> Address: ${randomAddress.house_number} ${randomAddress.street_name}</p>
-        <p> Zip Code: ${randomAddress.postcode}</p>
+        <p> ADDRESS: ${randomAddress.house_number} ${randomAddress.street_name}</p>
+        <p> ZIP CODE: ${randomAddress.postcode}</p>
         `
 
     if (document.querySelector('#noNoNo')) {

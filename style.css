@@ -6,17 +6,20 @@ body {
 .top {
     text-align: center;
     color: #464646;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 150px;
+}
+
+#what-is-this-site {
+    font-size: 14px;
 }
 
 .dropdowns {
-    margin-top: 50px; 
-    padding-top: 40px;
-    padding-bottom: 20px;
-    padding-right: 80px;
-    padding-left: 80px;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-bottom: 20px;
+    margin: 30px 50px 20px 50px;
+    padding: 40px 80px 20px 80px;
     background-color: #CCCCCC;
     opacity: 0.6;
     text-align: center;
@@ -123,10 +126,18 @@ body {
 }
 
 .more-info {
-    max-height: 100px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     color: #464646;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#new-laws {
+    font-size: 12px;
+    padding: 0 100px
 }
 
 #disclosure,
@@ -136,13 +147,14 @@ body {
 }
 
 footer {
-    margin-top: 50px;
-    text-align: center;
+    margin-bottom: 10px;
     font-size: 15px;
     color: #464646;
+    text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-content: flex-end;
+    align-items: center;
 }
 
 .bugs {
