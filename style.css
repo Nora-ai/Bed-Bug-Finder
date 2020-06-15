@@ -9,8 +9,8 @@ body {
 }
 
 .dropdowns {
-    margin-top: 50px;
-    padding-top: 20px;
+    margin-top: 50px; 
+    padding-top: 40px;
     padding-bottom: 20px;
     padding-right: 80px;
     padding-left: 80px;
@@ -19,39 +19,51 @@ body {
     margin-bottom: 20px;
     background-color: #CCCCCC;
     opacity: 0.6;
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around; */
+    text-align: center;
+    font-size: 15px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
+
+/* i hate flex box!!! */
+/* i hate flex box!!! */
+/* i hate flex box!!! */
+/* i hate flex box!!! */
+/* i hate flex box!!! */
+/* can i learn to love it? */
+/* can i learn to love it? */
+/* can i learn to love it? */
+/* can i learn to love it? */
+/* can i learn to love it? */
+
 
 #choose-borough {
     width: 200px;
+    height: 25px;
     background-color: transparent;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 #choose-neighborhood {
     width: 200px;
+    height: 25px;
     background-color: transparent;
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; */
 }
 
 #find {
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    height: 30px;
+    box-shadow: 5px 10px 18px black;
 }
 
 #choose-borough,
 #choose-neighborhood,
 #find {
-    display: block;
     background-color: transparent;
     border-color: #464646;
     border-radius: 10px;
     font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
 }
 
 #border-box {
@@ -61,6 +73,8 @@ body {
     padding-bottom: 20px;
     background-color: #CCCCCC;
     opacity: 0.6;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .image-results {
@@ -74,6 +88,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
+    box-shadow: 5px 10px 18px black;
 }
 
 #append-bed-bugs {
@@ -89,6 +104,9 @@ body {
     border-color: #464646;
     border-radius: 10px;
     font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    box-shadow: 5px 10px 18px black;
+    height: 30px;
 
 }
 
@@ -104,14 +122,12 @@ body {
     font-size: 50px;
 }
 
-
 .more-info {
     max-height: 100px;
     text-align: center;
     margin-top: 50px;
     color: #464646;
 }
-
 
 footer {
     margin-top: 50px;
