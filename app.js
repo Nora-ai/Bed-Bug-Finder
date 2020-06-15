@@ -1,4 +1,3 @@
-//default page upon entering... button onClick, locaton reload?? or something. research it!
 
 const pullData = async () => {
     const url = "https://data.cityofnewyork.us/resource/wz6d-d3jb.json"
@@ -78,7 +77,6 @@ async function whichAddress(placeholder) {
         console.log(`Catch that ${bug}!`)
     }
 }
-
 
 
 //replaces with a new address when find the bugs button is clicked again
@@ -193,7 +191,6 @@ const bugChaos = () => {
 }
 
 
-
 const nope = () => {
     let theNopes = ['nope', 'nahhh', 'negative', 'no bugs here', 'try the next building', 'no', 'never', 'I hope not', 'ewwwww no']
     let randomNope = []
@@ -205,7 +202,6 @@ const nope = () => {
     bug.append(no)
     console.log(no)
 }
-
 
 
 const toBugOrNotToBug = () => {
@@ -257,8 +253,6 @@ const showMeTheBug = () => {
             (moveBugs(bugs)); }, 1000);
     }
 showMeTheBug()
-
-
 
 
 

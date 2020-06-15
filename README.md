@@ -69,8 +69,8 @@ API data snippet
 |June 8| Project Prompt | Complete
 |June 9| Basic HTML & CSS/Psuedocode functionality/Start API work | Complete
 |June 10| Return API for dropdowns/randomized objects | Complete
-|June 11| Continue with API work/Advanced CSS & Flexbox  | Incomplete
-|June 12| Post MVP | Incomplete
+|June 11| Continue with API work/Advanced CSS & Flexbox  | Complete
+|June 12| Post MVP | Partially Complete
 |June 15| Present | Incomplete
 
 ## Priority Matrix
@@ -81,22 +81,79 @@ API data snippet
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Psuedocode | H | 2hrs| 1.5hrs | hrs |
-| Basic HTML & CSS | H | 3hrs| 4.5hrs | hrs |
-| API functionality | H | 20hrs| 16hrs | hrs |
-| Advanced CSS | M | 10hrs| hrs | hrs |
-| PostMVP | L | 10hrs| hrs | hrs |
-| Total | H | 45hrs| hrs | hrs |
+| Psuedocode | H | 2hrs| 1.5hrs | 1.5hrs |
+| Basic HTML & CSS | H | 3hrs| 4.5hrs | 4.5hrs |
+| API functionality | H | 20hrs| 25hrs | 25hrs |
+| Advanced CSS | M | 10hrs| 15hrs | 15hrs |
+| PostMVP | L | 10hrs| 5hrs | 5hrs |
+| Total | H | 45hrs| 51hrs | 51hrs |
 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+//The four below functions are all connected to one button. Once clicked, based on the API, the button will return the 'nope' function or the 'bugChaos' function. The 'nope' function will return a random version of the word 'no'. The 'bugChaos' function will return an animation. Every time the button is clicked, it also refreshes the page.
+
+const bug = document.querySelector('#findOut')
+
+const bugChaos = () => {
+    const yes = document.createElement('p')
+    yes.setAttribute('id', "yesYesYes")
+    bug.removeChild(bug.lastChild)
+    yes.innerHTML = 'YES'
+    bug.append(yes)
+    console.log(yes)
+    for (let i = 0; i < 40; i++) {
+        createAndReleaseTheBugs()
+    }
 }
+
+const nope = () => {
+    let theNopes = ['nope', 'nahhh', 'negative', 'no bugs here', 'try the next building', 'no', 'never', 'I hope not', 'ewwwww no']
+    let randomNope = []
+    randomNope = theNopes[Math.floor(Math.random() * theNopes.length)]
+    const no = document.createElement('p')
+    no.setAttribute("id", "noNoNo")
+    bug.removeChild(bug.lastChild)
+    no.innerHTML = randomNope
+    bug.append(no)
+    console.log(no)
+}
+
+const toBugOrNotToBug = () => {
+    console.log(randomAddress)
+    if (randomAddress.infested_dwelling_unit_count > 0) {
+        return bugChaos();
+    } else {
+        return nope();
+    }
+}
+
+const wasItInfested = document.getElementById('yesOrNo')
+wasItInfested.addEventListener('click', toBugOrNotToBug)
+
+function refreshWasItInfested() {
+    console.log('hello')
+    const oldAnswerNo = document.querySelector('#noNoNo')
+    const oldAnswerYes = document.querySelector('#yesYesYes')
+    if (oldAnswerNo === null) {
+        return;
+    } else {
+        (oldAnswerNo.removeChild(oldAnswerNo.lastChild))
+    }
+    if (oldAnswerYes === null) {
+        return;
+    } else {
+        (oldAnswerYes.removeChild(oldAnswerYes.lastChild))
+    }
+    }
+refreshWasItInfested()
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+-  MVP completed in its entirety.
+-  Post MVP Bug animations completed.
+-  Post presentation, I will add media queries for responsive design.
+-  My original idea was to do a match-matching site for bed bugs (to be funny..) I had this listed in my Post MVP. I now don't think that bed bugs should populate, so I will *scratch* that idea.
+-  I would like to explore getting further access to the API.
